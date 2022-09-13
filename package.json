@@ -1,0 +1,29 @@
+{
+  "name": "gd-accbuild-doc",
+  "version": "0.0.0",
+  "description": "优速搭低代码文档",
+  "license": "MIT",
+  "scripts": {
+    "docs:build": "vuepress build gd-AccBuild-doc",
+    "docs:clean-dev": "vuepress dev gd-AccBuild-doc --clean-cache",
+    "docs:dev": "vuepress dev gd-AccBuild-doc"
+  },
+  "devDependencies": {
+    "@vue/runtime-dom": "^3.2.39",
+    "@vuepress/client": "2.0.0-beta.51",
+    "@vuepress/plugin-register-components": "2.0.0-beta.51",
+    "@vuepress/utils": "2.0.0-alpha.1",
+    "eslint": "^8.23.1",
+    "unplugin-auto-import": "^0.11.2",
+    "unplugin-vue-components": "^0.22.4",
+    "vue": "^3.2.38",
+    "vue-eslint-parser": "^9.1.0",
+    "vuepress": "2.0.0-beta.51",
+    "vuepress-plugin-components": "2.0.0-beta.97",
+    "vuepress-theme-hope": "2.0.0-beta.97"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.0.9",
+    "element-plus": "^2.2.16"
+  }
+}

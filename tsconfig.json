@@ -20,5 +20,5 @@
         "gd-AccBuild-doc/.vuepress/**/*.d.ts",
         "gd-AccBuild-doc/.vuepress/**/*.tsx",
         "gd-AccBuild-doc/.vuepress/**/*.vue"
-    ],
+, "gd-AccBuild-doc/.vuepress/mixins.js"    ],
 }

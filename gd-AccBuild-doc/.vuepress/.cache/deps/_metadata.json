@@ -1,6 +1,6 @@
 {
   "hash": "405a2009",
-  "browserHash": "9b4f8a59",
+  "browserHash": "da992af1",
   "optimized": {
     "@vue/devtools-api": {
       "src": "../../../../node_modules/.pnpm/@vue+devtools-api@6.2.1/node_modules/@vue/devtools-api/lib/esm/index.js",
@@ -116,6 +116,12 @@
       "fileHash": "6b48f669",
       "needsInterop": false
     },
+    "@theme-hope/components/transitions/FadeSlideY.js": {
+      "src": "../../../../node_modules/.pnpm/vuepress-theme-hope@2.0.0-beta.97/node_modules/vuepress-theme-hope/lib/client/components/transitions/FadeSlideY.js",
+      "file": "@theme-hope_components_transitions_FadeSlideY__js.js",
+      "fileHash": "a371966c",
+      "needsInterop": false
+    },
     "@theme-hope/components/SkipLink.js": {
       "src": "../../../../node_modules/.pnpm/vuepress-theme-hope@2.0.0-beta.97/node_modules/vuepress-theme-hope/lib/client/components/SkipLink.js",
       "file": "@theme-hope_components_SkipLink__js.js",
@@ -126,12 +132,6 @@
       "src": "../../../../node_modules/.pnpm/vuepress-theme-hope@2.0.0-beta.97/node_modules/vuepress-theme-hope/lib/client/components/icons/index.js",
       "file": "@theme-hope_components_icons_index__js.js",
       "fileHash": "e73de065",
-      "needsInterop": false
-    },
-    "@theme-hope/components/transitions/FadeSlideY.js": {
-      "src": "../../../../node_modules/.pnpm/vuepress-theme-hope@2.0.0-beta.97/node_modules/vuepress-theme-hope/lib/client/components/transitions/FadeSlideY.js",
-      "file": "@theme-hope_components_transitions_FadeSlideY__js.js",
-      "fileHash": "a371966c",
       "needsInterop": false
     },
     "@theme-hope/modules/blog/components/InfoList.js": {

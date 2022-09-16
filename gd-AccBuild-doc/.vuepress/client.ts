@@ -4,11 +4,13 @@ import ElementPlus from 'element-plus'
 import 'element-plus/theme-chalk/index.css';
 import * as Icons from '@element-plus/icons-vue'
 
+import './public/index.scss'
+
 export default defineClientConfig({
     enhance({ app, router, siteData }) {
         app.use(ElementPlus, { locale })
         for (const icon in Icons) {
-            app.component(`ElIcon${icon}`, Icons[icon])
+            app.component(`ElIcon${icon}`, (Icons as any)[icon])
         }
     },
     //setup() { },

@@ -281,8 +281,8 @@ const allData: AllData = {
               useInRange: "All",
               metaKey: "key",
               metaFieldType: "string",
-              metaDescrip: "组的唯一标志;默认为所有组成员的字段拼接中划线",
-              metaExample: "",
+              metaDescrip: "组的唯一标志;默认为所有组成员的字段拼接&",
+              metaExample: "startTime&endTime",
             },
             {
               useInRange: "All",
@@ -306,7 +306,7 @@ const allData: AllData = {
               metaDescrip:
                 "成员组件内建组件类型;仅当非成员时,即组合体元字段时生效",
               metaExample:
-                '`一共三种："$Input" 表示多个Input组合、"Input-Select-Input"、"Customize"`;前两种 的真实元数据取自原字段的元数据,第三种自定义时仅利用自身元数据',
+                '`一共三种："$Input" 表示多个Input组合、"Input&Select&Input"、"Customize"`;前两种 的真实元数据取自原字段的元数据,第三种自定义时仅利用自身元数据',
             },
           ],
         },

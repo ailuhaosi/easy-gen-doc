@@ -2,12 +2,16 @@ lockfileVersion: 5.4
 
 specifiers:
   '@element-plus/icons-vue': ^2.0.9
+  '@highlightjs/vue-plugin': ^2.1.0
   '@vue/runtime-dom': ^3.2.39
   '@vuepress/client': 2.0.0-beta.51
   '@vuepress/plugin-register-components': 2.0.0-beta.51
   '@vuepress/utils': 2.0.0-alpha.1
+  codemirror: 5.65.8
+  codemirror-editor-vue3: ^2.1.7
   element-plus: ^2.2.16
   eslint: ^8.23.1
+  highlight.js: ^11.6.0
   unplugin-auto-import: ^0.11.2
   unplugin-vue-components: ^0.22.4
   vue: ^3.2.38
@@ -18,7 +22,11 @@ specifiers:
 
 dependencies:
   '@element-plus/icons-vue': 2.0.9_vue@3.2.38
+  '@highlightjs/vue-plugin': 2.1.0_uy2ky4dft7hw6q6ksblomniqd4
+  codemirror: 5.65.8
+  codemirror-editor-vue3: 2.1.7
   element-plus: 2.2.16_vue@3.2.38
+  highlight.js: 11.6.0
 
 devDependencies:
   '@vue/runtime-dom': 3.2.39
@@ -1258,6 +1266,16 @@ packages:
       '@floating-ui/core': 1.0.1
     dev: false
 
+  /@highlightjs/vue-plugin/2.1.0_uy2ky4dft7hw6q6ksblomniqd4:
+    resolution: {integrity: sha512-E+bmk4ncca+hBEYRV2a+1aIzIV0VSY/e5ArjpuSN9IO7wBJrzUE2u4ESCwrbQD7sAy+jWQjkV5qCCWgc+pu7CQ==}
+    peerDependencies:
+      highlight.js: ^11.0.1
+      vue: ^3
+    dependencies:
+      highlight.js: 11.6.0
+      vue: 3.2.38
+    dev: false
+
   /@humanwhocodes/config-array/0.10.4:
     resolution: {integrity: sha512-mXAIHxZT3Vcpg83opl1wGlVZ9xydbfZO3r5YfRSH6Gpp2J/PfdBP0wbDa2sO6/qRbcalpoevVyW6A/fI6LfeMw==}
     engines: {node: '>=10.10.0'}
@@ -2360,6 +2378,17 @@ packages:
     engines: {node: '>=0.8'}
     dev: true
 
+  /codemirror-editor-vue3/2.1.7:
+    resolution: {integrity: sha512-Pj4p9vacexMk6P1XEjxriHU/Xna4V/6+KzJbUE8lwxx0wbCrAopuCHSdJSKpsMWhYj/enkaNVFoIp1MAfvqTgw==}
+    dependencies:
+      codemirror: 5.65.8
+      diff-match-patch: 1.0.5
+    dev: false
+
+  /codemirror/5.65.8:
+    resolution: {integrity: sha512-TNGkSkkoAsmZSf6W6g35LMVQJBHKasc2CKwhr/fTxSYun7cn6J+CbtyNjV/MYlFVkNTsqZoviegyCZimWhoMMA==}
+    dev: false
+
   /color-convert/1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}
     dependencies:
@@ -2963,6 +2992,10 @@ packages:
     dependencies:
       robust-predicates: 3.0.1
     dev: true
+
+  /diff-match-patch/1.0.5:
+    resolution: {integrity: sha512-IayShXAgj/QMXgB0IWmKx+rOPuGMhqm5w6jvFxmVenXKIzRqTAAsbBPT3kWQeGANj3jGgvcvv4yK6SxqYmikgw==}
+    dev: false
 
   /dir-glob/3.0.1:
     resolution: {integrity: sha512-WkrWp9GR4KXfKGYzOLmTuGVi1UWFfws377n9cc55/tb6DuqyF6pcQ5AbiHEshaDpY9v6oaSr2XCDidGmMwdzIA==}
@@ -3956,6 +3989,11 @@ packages:
   /hash-sum/2.0.0:
     resolution: {integrity: sha512-WdZTbAByD+pHfl/g9QSsBIIwy8IT+EsPiKDs0KNX+zSHhdDLFKdZu0BQHljvO+0QI/BasbMSUa8wYNCZTvhslg==}
     dev: true
+
+  /highlight.js/11.6.0:
+    resolution: {integrity: sha512-ig1eqDzJaB0pqEvlPVIpSSyMaO92bH1N2rJpLMN/nX396wTpDA4Eq0uK+7I/2XG17pFaaKE0kjV/XPeGt7Evjw==}
+    engines: {node: '>=12.0.0'}
+    dev: false
 
   /human-signals/3.0.1:
     resolution: {integrity: sha512-rQLskxnM/5OCldHo+wNXbpVgDn5A17CUoKX+7Sokwaknlq7CdSnphy0W39GU8dw59XiCXmFXDg4fRuckQRKewQ==}

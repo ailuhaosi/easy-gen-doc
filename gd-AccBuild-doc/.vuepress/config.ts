@@ -31,5 +31,10 @@ export default defineUserConfig({
             componentsDir: path.resolve(__dirname, './components'),
         }),
     ],
+    markdown:{
+        headers:{
+            level:[2,4]
+        }
+    },
     theme
 });

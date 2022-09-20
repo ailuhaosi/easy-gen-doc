@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["dep:codemirror_addon_fold_foldcode"],
+  "sourcesContent": ["export default require(\"../../../../node_modules/.pnpm/codemirror@5.65.8/node_modules/codemirror/addon/fold/foldcode.js\");"],
+  "mappings": ";;;;;;;AAAA,IAAO,yCAAQ;",
+  "names": []
+}

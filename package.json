@@ -24,6 +24,10 @@
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.0.9",
-    "element-plus": "^2.2.16"
+    "@highlightjs/vue-plugin": "^2.1.0",
+    "codemirror": "5.65.8",
+    "codemirror-editor-vue3": "^2.1.7",
+    "element-plus": "^2.2.16",
+    "highlight.js": "^11.6.0"
   }
 }

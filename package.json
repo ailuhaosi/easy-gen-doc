@@ -4,9 +4,9 @@
   "description": "优速搭低代码文档",
   "license": "MIT",
   "scripts": {
-    "docs:build": "vuepress build gd-AccBuild-doc",
-    "docs:clean-dev": "vuepress dev gd-AccBuild-doc --clean-cache",
-    "docs:dev": "vuepress dev gd-AccBuild-doc"
+    "docs:build": "vuepress build gd-accbuild-doc",
+    "docs:clean-dev": "vuepress dev gd-accbuild-doc --clean-cache",
+    "docs:dev": "vuepress dev gd-accbuild-doc"
   },
   "devDependencies": {
     "@vue/runtime-dom": "^3.2.39",

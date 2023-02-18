@@ -1,10 +1,11 @@
 ---
 # 这是文章的标题
-title: 前置知识
+title: 2. 业务组件
 # 这是页面的图标
-icon: page
-# 这是侧边栏的顺序
-order: 1
+icon: type
+# 链接页面禁止出现在侧边栏
+index: false
+order: 2
 # 设置作者
 author: gd
 # 设置写作时间
@@ -15,7 +16,7 @@ category:
 # 一个页面可以有多个标签
 tag:
   - 简介
-  - 后端
+  - 前端
   - 优速搭二次开发
 # 此页面会在文章列表置顶
 sticky: true
@@ -27,7 +28,7 @@ footer: 这是测试显示的页脚
 copyright: 优速搭 版权所有
 ---
 
-## 后端二次开发前置知识
+## biz组件简介
 
 你可以在 Markdown 的 Frontmatter 中设置页面信息。
 

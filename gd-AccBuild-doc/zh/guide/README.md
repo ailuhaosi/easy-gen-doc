@@ -1,5 +1,5 @@
 ---
-title: 开始
+title: 开始低代码之旅
 index: false
 icon: creative
 category:
@@ -8,6 +8,6 @@ category:
 
 ## 目录
 
-- [简介](intro.md)
+- [优速搭平台简介](intro.md)
 
 - [快速上手](start.md)

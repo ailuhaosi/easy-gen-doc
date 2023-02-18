@@ -1,9 +1,9 @@
-import { useStyleTag } from "F:/MyWorkSpace_program/lowcode-nocode/文档/gd-AccBuild-doc/node_modules/.pnpm/vuepress-plugin-components@2.0.0-beta.97/node_modules/vuepress-plugin-components/lib/client/composables/index.js";
+import { useStyleTag } from "F:/MyWorkSpace_program/lowcode-nocode/gd-AccBuild-doc/node_modules/.pnpm/vuepress-plugin-components@2.0.0-beta.97/node_modules/vuepress-plugin-components/lib/client/composables/index.js";
 import { h } from "vue";
 import { defineClientConfig } from "@vuepress/client";
-import Badge from "F:/MyWorkSpace_program/lowcode-nocode/文档/gd-AccBuild-doc/node_modules/.pnpm/vuepress-plugin-components@2.0.0-beta.97/node_modules/vuepress-plugin-components/lib/client/components/Badge";
-import FontIcon from "F:/MyWorkSpace_program/lowcode-nocode/文档/gd-AccBuild-doc/node_modules/.pnpm/vuepress-plugin-components@2.0.0-beta.97/node_modules/vuepress-plugin-components/lib/client/components/FontIcon";
-import BackToTop from "F:/MyWorkSpace_program/lowcode-nocode/文档/gd-AccBuild-doc/node_modules/.pnpm/vuepress-plugin-components@2.0.0-beta.97/node_modules/vuepress-plugin-components/lib/client/components/BackToTop";
+import Badge from "F:/MyWorkSpace_program/lowcode-nocode/gd-AccBuild-doc/node_modules/.pnpm/vuepress-plugin-components@2.0.0-beta.97/node_modules/vuepress-plugin-components/lib/client/components/Badge";
+import FontIcon from "F:/MyWorkSpace_program/lowcode-nocode/gd-AccBuild-doc/node_modules/.pnpm/vuepress-plugin-components@2.0.0-beta.97/node_modules/vuepress-plugin-components/lib/client/components/FontIcon";
+import BackToTop from "F:/MyWorkSpace_program/lowcode-nocode/gd-AccBuild-doc/node_modules/.pnpm/vuepress-plugin-components@2.0.0-beta.97/node_modules/vuepress-plugin-components/lib/client/components/BackToTop";
 
 
 export default defineClientConfig({

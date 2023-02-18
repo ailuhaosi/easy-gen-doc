@@ -15,7 +15,7 @@ import {
 import "./chunk-BQOD6VY2.js";
 
 // node_modules/.pnpm/vuepress-plugin-comment2@2.0.0-beta.97/node_modules/vuepress-plugin-comment2/lib/client/components/Giscus.js
-import "F:/MyWorkSpace_program/lowcode-nocode/\u6587\u6863/gd-AccBuild-doc/node_modules/.pnpm/vuepress-plugin-comment2@2.0.0-beta.97/node_modules/vuepress-plugin-comment2/lib/client/styles/giscus.scss";
+import "F:/MyWorkSpace_program/lowcode-nocode/gd-accbuild-doc/node_modules/.pnpm/vuepress-plugin-comment2@2.0.0-beta.97/node_modules/vuepress-plugin-comment2/lib/client/styles/giscus.scss";
 var u = COMMENT_OPTIONS;
 var c = Boolean(u.repo && u.repoId && u.category && u.categoryId);
 var l = ["de", "gsw", "en", "es", "fr", "id", "it", "ja", "ko", "pl", "ro", "ru", "vi", "zh-CN", "zh-TW"];

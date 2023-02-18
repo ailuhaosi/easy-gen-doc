@@ -1,5 +1,5 @@
 ---
-title: 二次开发文档
+title: 优速搭二次开发
 index: false
 icon: creative
 category:

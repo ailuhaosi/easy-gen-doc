@@ -1,6 +1,6 @@
 import {
   useSidebarItems
-} from "./chunk-WGMO5S2L.js";
+} from "./chunk-C6AGJA4J.js";
 import {
   useMobile,
   usePageAuthor,
@@ -39,7 +39,7 @@ import {
 import "./chunk-BQOD6VY2.js";
 
 // node_modules/.pnpm/vuepress-theme-hope@2.0.0-beta.97/node_modules/vuepress-theme-hope/lib/client/components/PageFooter.js
-import "F:/MyWorkSpace_program/lowcode-nocode/\u6587\u6863/gd-AccBuild-doc/node_modules/.pnpm/vuepress-theme-hope@2.0.0-beta.97/node_modules/vuepress-theme-hope/lib/client/styles/footer.scss";
+import "F:/MyWorkSpace_program/lowcode-nocode/gd-AccBuild-doc/node_modules/.pnpm/vuepress-theme-hope@2.0.0-beta.97/node_modules/vuepress-theme-hope/lib/client/styles/footer.scss";
 var PageFooter_default = defineComponent({
   name: "PageFooter",
   setup() {
@@ -66,7 +66,7 @@ var PageFooter_default = defineComponent({
 });
 
 // node_modules/.pnpm/vuepress-theme-hope@2.0.0-beta.97/node_modules/vuepress-theme-hope/lib/client/components/CommonWrapper.js
-import "F:/MyWorkSpace_program/lowcode-nocode/\u6587\u6863/gd-AccBuild-doc/node_modules/.pnpm/vuepress-theme-hope@2.0.0-beta.97/node_modules/vuepress-theme-hope/lib/client/styles/common.scss";
+import "F:/MyWorkSpace_program/lowcode-nocode/gd-accbuild-doc/node_modules/.pnpm/vuepress-theme-hope@2.0.0-beta.97/node_modules/vuepress-theme-hope/lib/client/styles/common.scss";
 var CommonWrapper_default = defineComponent({
   name: "CommonWrapper",
   props: {

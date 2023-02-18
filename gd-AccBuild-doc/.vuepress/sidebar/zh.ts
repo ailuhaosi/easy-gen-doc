@@ -6,7 +6,7 @@ export const zh = sidebar({
     //"home",
     //"slides",
     {
-      text: "开始",
+      text: "开始低代码之旅",
       icon: "launch",
       prefix: "guide/",
       link: "guide/",
@@ -14,7 +14,7 @@ export const zh = sidebar({
       children: "structure",
     },
 	{
-      text: "二次开发文档",
+      text: "优速搭二次开发",
       icon: "proposal",
       prefix: "development/",
       link: "development/",

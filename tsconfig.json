@@ -16,9 +16,9 @@
         ]
     },
     "include": [
-        "gd-AccBuild-doc/.vuepress/**/*.ts",
-        "gd-AccBuild-doc/.vuepress/**/*.d.ts",
-        "gd-AccBuild-doc/.vuepress/**/*.tsx",
-        "gd-AccBuild-doc/.vuepress/**/*.vue"
+        "gd-accbuild-doc/.vuepress/**/*.ts",
+        "gd-accbuild-doc/.vuepress/**/*.d.ts",
+        "gd-accbuild-doc/.vuepress/**/*.tsx",
+        "gd-accbuild-doc/.vuepress/**/*.vue"
     ],
 }

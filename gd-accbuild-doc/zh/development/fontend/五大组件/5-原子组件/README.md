@@ -1,11 +1,11 @@
 ---
 # 这是文章的标题
-title: 4. 原子组件
+title: 5. 原子组件
 # 这是页面的图标
 icon: geometry
 # 链接页面禁止出现在侧边栏
 index: false
-order: 4
+order: 5
 # 设置作者
 author: gd
 # 设置写作时间

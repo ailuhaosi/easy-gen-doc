@@ -1,11 +1,11 @@
 ---
 # 这是文章的标题
-title: 3. 维度组件
+title: 4. 维度组件
 # 这是页面的图标
 icon: geometry
 # 链接页面禁止出现在侧边栏
 index: false
-order: 3
+order: 4
 # 设置作者
 author: gd
 # 设置写作时间

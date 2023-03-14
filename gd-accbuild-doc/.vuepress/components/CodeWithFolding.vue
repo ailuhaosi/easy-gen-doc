@@ -6,7 +6,7 @@
     <p>组件功能描述</p> -->
     <div class="component-wrapper">
       <div class="component-wrapper-demo">{{ desc }}</div>
-      <div class="code-content" style="height: 0">
+      <div class="code-content" v-highlight style="height: 0">
         <div class="code-content-height">
           <!-- <div class="code-user-desc">
               组件描述说明
@@ -17,13 +17,14 @@
             :language="language"
             :code="code"
           ></highlightjs> -->
-          <Codemirror
-            v-model:value="code"
+          <pre><code class="vue">{{code}}</code></pre>
+          <!-- <Codemirror
+            :value="code"
             :options="cmOptions"
             border
             placeholder="测试 placeholder"
             :height="cmHeight"
-          />
+          /> -->
         </div>
       </div>
       <div class="lock-code" @click="showCode(0)">
@@ -44,23 +45,23 @@
   </div>
 </template>
 <script setup>
-import "highlight.js/styles/vs.css";
+/* import "highlight.js/styles/vs.css";
 import "highlight.js/lib/common";
-import hljsVuePlugin from "@highlightjs/vue-plugin";
+import * as hljsVuePlugin from "@highlightjs/vue-plugin"; */
 import { computed, ref, nextTick, onMounted } from "vue";
 
 /* codemirror导入 */
-import Codemirror from "codemirror-editor-vue3";
+/* import Codemirror from "codemirror-editor-vue3"; */
 
 // language
-import "codemirror/mode/javascript/javascript.js";
-import "codemirror/mode/vue/vue.js";
+/* import "codemirror/mode/javascript/javascript.js";
+import "codemirror/mode/vue/vue.js"; */
 /* 折叠配置 */
-import "codemirror/addon/fold/foldgutter.css";
-import "codemirror/addon/fold/foldcode";
+//import "codemirror/addon/fold/foldgutter.css";
+/* import "codemirror/addon/fold/foldcode";
 import "codemirror/addon/fold/foldgutter";
 import "codemirror/addon/fold/brace-fold";
-import "codemirror/addon/fold/comment-fold";
+import "codemirror/addon/fold/comment-fold"; */
 /* 折叠配置 */
 /* codemirror导入 */
 
@@ -108,7 +109,7 @@ const cmOptions = computed(() => ({
 }));
 /* codemirror配置 */
 
-const highlightjs = hljsVuePlugin.component;
+//const highlightjs = hljsVuePlugin.component;
 
 //每一个区域的高度
 const codeParent = ref([]);
@@ -149,13 +150,6 @@ onMounted(() => {
 });
 </script>
 <script>
-//代码高亮文件引入
-/* import hljs from "highlight.js";
-//样式文件,这里我选的是sublime样式，文件里面还有其他样式可供选择
-import "highlight.js/styles/color-brewer.css"; */
-/* import "highlight.js/styles/stackoverflow-light.css";
-import "highlight.js/lib/common";
-import hljsVuePlugin from "@highlightjs/vue-plugin"; */
 
 export default {
   name: "CodeWithFolding",

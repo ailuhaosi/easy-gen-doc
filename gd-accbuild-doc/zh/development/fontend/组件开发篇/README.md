@@ -1,6 +1,7 @@
 ---
-title: 五大组件
+title: 组件开发篇
 index: false
+order: 2
 icon: plugin
 category:
   - 使用指南

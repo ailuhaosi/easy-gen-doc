@@ -12,19 +12,30 @@ import "highlight.js/styles/vs.css";
 import "highlight.js/lib/common";
 
 export default defineClientConfig({
-    enhance({ app, router, siteData }) {
-      app.use(ElementPlus, { locale });
-      for (const icon in Icons) {
-        app.component(`ElIcon${icon}`, (Icons as any)[icon]);
-      }
-      //app.use(Codemirror)
-      app.directive("highlight", function (el) {
-        let blocks = el.querySelectorAll("pre code");
-        blocks.forEach((block) => {
-          hljs.highlightBlock(block);
-        });
-      });
+  enhance({ app, router, siteData }) {
+    app.use(ElementPlus, { locale });
+    for (const icon in Icons) {
+      app.component(`ElIcon${icon}`, (Icons as any)[icon]);
     }
-    //setup() { },
-    //rootComponents: [],
-  });
+    //app.use(Codemirror)
+    app.directive("highlight", function (el) {
+      let blocks = el.querySelectorAll("pre code");
+      blocks.forEach((block) => {
+        hljs.highlightBlock(block);
+      });
+    });
+    router.beforeResolve(async to=>{
+      setTimeout(function () {
+        const tocEl = document.querySelector("#app .toc-place-holder");
+        if (tocEl) {
+          document.querySelector("html")?.setAttribute("class", "with-toc");
+        } else {
+          document.querySelector("html")?.setAttribute("class", "no-toc");
+        }
+      }, 500);
+      return true
+    })
+  },
+  //setup() { },
+  //rootComponents: [],
+});

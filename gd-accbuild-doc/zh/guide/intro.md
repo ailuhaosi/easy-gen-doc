@@ -5,6 +5,7 @@ title: 优速搭平台简介
 icon: page
 # 这是侧边栏的顺序
 order: 1
+toc: false
 # 设置作者
 author: gd
 # 设置写作时间
@@ -31,15 +32,87 @@ copyright: 无版权
 优速搭包含了 应用设计器、应用市场、模块市场、前端组件库、前端项目框架(uniapp)、后端项目框架(ruoyi-pro)、后端核心包、业务流程引擎、审批流程引擎等。<br/>
 优速搭低代码平台由多个功能部分组成，且平台是面向零代码、低代码、高代码所有用户开放的，因此不同用户需要了解的功能有所侧重，以下是不同使用者对应需要侧重了解的功能。
 
-|        功能部分         |                                         描述                                         |    使用群体    |
-| :---------------------: | :----------------------------------------------------------------------------------: | :------------: |
-|       应用设计器        |                    可视化的管理数据、配置页面呈现。(支持源码导出)                    | 零代码 NoCode  |
-|        应用市场         | 由其它用户使用优速搭平台开发的完整应用，能直接复用整个应用，且可在设计器中自己订制。 | 零代码 NoCode  |
-|        模块市场         |    由其它用户使用优速搭平台开发的模块，能直接复用，且可在设计器中引用集成该模块。    | 零代码 NoCode  |
-|  前端项目框架(uniapp)   |      允许用户按一定规范修改前端页面代码，并且不会在与零代码混合开发时发生冲突。      | 低代码 LowCode |
-| 后端项目框架(ruoyi-pro) |      允许用户按一定规范修改后端逻辑代码，并且不会在与零代码混合开发时发生冲突。      | 低代码 LowCode |
-|       前端组件库        |                        允许用户以 NPM 包的方式使用前端组件。                         | 高代码 ProCode |
-|       后端核心包        |                   允许用户以 Maven 包的方式使用后端增删改查逻辑。                    | 高代码 ProCode |
+<style>
+  .gd-acc--function{
+    text-align:center;
+    min-width:200px;
+  }
+  .gd-acc--desc{
+    text-align:left;
+    min-width:220px;
+  }
+  .gd-acc--design-for{
+    text-align:center;
+    min-width:100px;
+  }
+  .gd-acc--plan{
+    text-align:left;
+    min-width:150px;
+  }
+</style>
+<div style="overflow-x:scroll;min-width:100%;">
+<table>
+    <tr>
+        <th style="min-width:80px;">分类</th>
+        <th style="min-width:130px;">功能部分</th>
+        <th>描述</th>
+        <th>使用群体</th>
+        <th>开发进展与计划</th>
+    </tr>
+    <tr>
+        <th style="min-width:120px;" >优速搭效率工具</th>
+        <td class="gd-acc--function">应用设计器</td>
+        <td class="gd-acc--desc">可视化的管理数据、配置页面呈现。(支持源码导出)</td>
+        <td class="gd-acc--design-for">零代码 NoCode</td>
+        <td class="gd-acc--plan">持续完善中并且可以使用</td>
+    </tr>
+    <tr>
+        <th style="min-width:130px;">IDEA插件</th>
+        <td class="gd-acc--function">gd-accbuild-idea-extension</td>
+        <td class="gd-acc--desc">表结构、UI元数据同步等功能</td>
+        <td  class="gd-acc--design-for">低代码 LowCode</td>
+        <td class="gd-acc--plan">暂未完善,暂不可用</td>
+    </tr>
+    <tr>
+        <th style="min-width:120px;" rowspan="4">优速搭核心框架</th>
+        <td class="gd-acc--function"><div>前端项目框架</div><div>gd-accbuild-admin</div><div>gd-accbuild-mobile</div></td>
+        <td class="gd-acc--desc">允许用户按一定规范修改前端页面代码，并且遵循一定的合并策略，不会在与零代码混合开发时发生冲突。</td>
+        <td  class="gd-acc--design-for">低代码 LowCode</td>
+        <td class="gd-acc--plan">持续完善中可以使用</td>
+    </tr>
+    <tr>
+        <td class="gd-acc--function"><div>前端组件库</div><div>gd-accbuild-template</div></td>
+        <td class="gd-acc--desc">允许用户以 NPM 包的方式使用前端组件。</td>
+        <td  class="gd-acc--design-for">高代码 ProCode</td>
+        <td class="gd-acc--plan">持续完善中可以使用</td>
+    </tr>
+    <tr>
+        <td class="gd-acc--function"><div>后端项目框架</div><div>不限制</div></td>
+        <td class="gd-acc--desc">只需要集成gd-accbuild-server使用即可，默认会根据设计器的配置自动生成CRUD接口。也允许用户根据请求api接口的override实现定制后端逻辑代码，并且不会在与零代码混合开发时发生冲突。</td>
+        <td  class="gd-acc--design-for">低代码 LowCode</td>
+        <td class="gd-acc--plan">暂未完善,暂不可用。目前使用的是nodejs,计划使用kotlin/js重写,发布成maven包和npm包</td>
+    </tr>
+    <tr>
+        <td class="gd-acc--function">serverless</td>
+        <td class="gd-acc--desc">直接使用unCloud部署后端，按量付费价格跟uniCloud标准一致。</td>
+        <td  class="gd-acc--design-for">低代码 LowCode</td>
+        <td class="gd-acc--plan">持续完善中可以使用</td>
+    </tr>
+    <tr>
+    <th style="min-width:130px;" rowspan="2">优速搭开发者生态</th>
+        <td class="gd-acc--function">应用市场</td>
+        <td class="gd-acc--desc">由其它用户使用优速搭平台开发的完整应用，能直接复用整个应用，且可在设计器中自己订制。</td>
+        <td  class="gd-acc--design-for">零代码 NoCode</td>
+        <td class="gd-acc--plan">持续完善中可以使用</td>
+    </tr>
+    <tr>
+        <td class="gd-acc--function">模块市场</td>
+        <td class="gd-acc--desc">由其它用户使用优速搭平台开发的模块，能直接复用，且可在设计器中引用集成该模块。</td>
+        <td  class="gd-acc--design-for">零代码 NoCode</td>
+        <td class="gd-acc--plan">持续完善中可以使用</td>
+    </tr>
+</table>
+</div>
 
 ## 应用设计器简介
 
@@ -71,14 +144,14 @@ copyright: 无版权
 ```mermaid
 graph TD
 X["页面"] --> A["布局组件(layout-ui)"]
-A -->|提供 排版能力| B("业务组件(biz-ui)")
+A -->|提供 布局能力| B("业务组件(biz-ui)")
 B -->|注入 meta数据和data数据| C["场景容器(scene-container)"]
-C -->|是维度组件的具体实现| D["维度组件(dimension-ui)"]
+C -->|是维度组件的具体场景封装| D["维度组件(dimension-ui)"]
 D -->|增强 属性和事件| E["原子组件(atomic-ui)"]
 E -...->|逐层组装| X
 ```
 
-### 四种组件对比
+### 五种组件对比
 
 <div style="overflow-x:scroll;min-width:100%;">
 <table>
@@ -102,10 +175,10 @@ E -...->|逐层组装| X
     <tr>
     <th style="min-width:80px;">定制</th>
     <td><strong>不需要二次开发</strong>,内置提供flex布局</td>
-    <td><strong>不需要二次开发</strong>，该层组件规范了平台的schema协议</td>
-    <td><strong>可以二次开发</strong>，不同场景使用的组件内部逻辑在这里定义</td>
-    <td><strong>不需要二次开发</strong>，由平台自动根据您的原子组件生成模板</td>
-    <td><strong>可以二次开发</strong>，可以任意写符合vue规范的组件</td>
+    <td><strong>不需要二次开发</strong>,该层组件规范了平台的schema协议,由平台自动根据您的<strong>场景容器</strong>生成模板</td>
+    <td><strong>可以二次开发</strong>,不同场景使用的组件内部逻辑在这里定义</td>
+    <td><strong>不需要二次开发</strong>,由平台自动根据您的<strong>原子组件</strong>生成模板</td>
+    <td><strong>可以二次开发</strong>,可以任意写符合vue规范的组件</td>
     </tr>
     <tr>
     <th style="min-width:80px;">对应关系</th>

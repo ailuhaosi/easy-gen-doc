@@ -1,0 +1,32 @@
+:root {
+  --main-content-width: 420px;
+  --main-content-width-collapsed: 120px;
+}
+.no-toc {
+  --main-content-width: 420px;
+  --main-content-width-collapsed: 120px;
+}
+.with-toc {
+  --main-content-width: 600px;
+  --main-content-width-collapsed: 300px;
+}
+.theme-container > #main-content > nav,
+.theme-container > #main-content > div,
+.theme-container > #main-content > footer {
+  min-width: calc(100vw - var(--main-content-width));
+  margin-left: 0;
+  margin-right: 0;
+}
+/*  sidebar-collapsed */
+.theme-container.sidebar-collapsed > #main-content > nav,
+.theme-container.sidebar-collapsed > #main-content > div,
+.theme-container.sidebar-collapsed > #main-content > footer {
+  min-width: calc(100vw - var(--main-content-width-collapsed));
+  margin-left: 0;
+  margin-right: 0;
+}
+.toc-place-holder {
+  #toc {
+    margin-left: 30px;
+  }
+}

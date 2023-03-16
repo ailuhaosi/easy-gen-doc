@@ -122,15 +122,15 @@ copyright: 无版权
 ### 数据维护
 
 1. 物理表的基础维护<br/>
-   ![物理表的基础维护](/images/1.1Designer-DataMgr.png)
+    <img :src="$withBase('/images/1.1Designer-DataMgr.png')" alt="物理表的基础维护" />
 2. 字典的基础维护<br/>
-   ![字典的基础维护](/images/1.2Designer-DictMgr.png)
+    <img :src="$withBase('/images/1.2Designer-DictMgr.png')" alt="字典的基础维护" />
 3. 关联关系的维护(表关联、字典关联)<br/>
-   ![关联关系的维护](/images/1.3Designer-RelationMgr.png)
+    <img :src="$withBase('/images/1.3Designer-RelationMgr.png')" alt="关联关系的维护" />
 
 ### 页面配置
 
-![页面可视化配置](/images/2.2Designer-SettingPage.png)
+<img :src="$withBase('/images/2.2Designer-SettingPage.png')" alt="页面可视化配置" />
 
 ## 优速搭低代码实现原理
 

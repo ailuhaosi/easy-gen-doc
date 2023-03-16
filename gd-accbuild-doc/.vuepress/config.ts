@@ -6,7 +6,7 @@ import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
 import { path } from '@vuepress/utils'
 
 export default defineUserConfig({
-    base: "/",
+    base: "/gd-accbuild-doc/",
 
     locales: {
         "/": {

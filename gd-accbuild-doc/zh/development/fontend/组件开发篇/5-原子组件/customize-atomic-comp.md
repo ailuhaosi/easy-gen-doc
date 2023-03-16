@@ -53,8 +53,8 @@ xxx-ui 自定义的命名空间的原子组件
 
 #### 打开在线Coding界面
 按照下图操作：打开开发平台 -> 进入组件入口 -> 选择原子组件 -> 点击在线编写组件 -> 显示如下界面。
-![在线编写原子组件操作步骤](/images/online-coding-comp.png)
-![在线编写原子组件界面](/images/online-coding-comp-ui.png)
+<img :src="$withBase('/images/online-coding-comp.png')" alt="在线编写原子组件操作步骤" />
+<img :src="$withBase('/images/online-coding-comp-ui.png')" alt="在线编写原子组件界面" />
 
 #### 拷贝模板代码到编辑器并做相应修改
 <BizCodeWithFolding type="AtomicCompTemplateVue" />

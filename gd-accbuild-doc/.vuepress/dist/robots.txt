@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://vuepress-theme-hope-v2-demo.mrhope.sitehttp://gd771747384.gitee.io/gd-accbuild-doc/sitemap.xml
+Sitemap: https://vuepress-theme-hope-v2-demo.mrhope.site/sitemap.xml

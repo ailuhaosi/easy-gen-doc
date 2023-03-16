@@ -1,4 +1,5 @@
 import { defineClientConfig } from "@vuepress/client";
+import { onBeforeMount } from "vue";
 import locale from "element-plus/lib/locale/lang/zh-cn";
 import ElementPlus from "element-plus";
 import "element-plus/theme-chalk/index.css";
@@ -24,7 +25,9 @@ export default defineClientConfig({
         hljs.highlightBlock(block);
       });
     });
-    router.beforeResolve(async to=>{
+  },
+  setup() {
+    onBeforeMount(() => {
       setTimeout(function () {
         const tocEl = document.querySelector("#app .toc-place-holder");
         if (tocEl) {
@@ -33,9 +36,8 @@ export default defineClientConfig({
           document.querySelector("html")?.setAttribute("class", "no-toc");
         }
       }, 500);
-      return true
-    })
+      //return true;
+    });
   },
-  //setup() { },
   //rootComponents: [],
 });

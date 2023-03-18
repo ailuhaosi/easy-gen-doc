@@ -29,7 +29,7 @@ copyright: 优速搭 版权所有
 
 ## 前置知识:
 
-[原子组件(atomic-ui)(点我看概念设计理念)](/zh/guide/intro.html#概念设计) 是 最基础的组件。可以在 维度组件  内部渲染的。
+<router-link :to="'/zh/guide/intro.html#概念设计'">原子组件(atomic-ui)(点我看概念设计理念)</router-link> 是 最基础的组件。可以在 维度组件  内部渲染的。
 
 ## 动手写一个原子组件
 

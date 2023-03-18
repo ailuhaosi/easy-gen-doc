@@ -1,5 +1,5 @@
 import { defineUserConfig } from "vuepress";
-
+import DefineOptions from 'unplugin-vue-define-options/vite'
 import theme from "./theme.js";
 
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
@@ -30,6 +30,7 @@ export default defineUserConfig({
         registerComponentsPlugin({
             componentsDir: path.resolve(__dirname, './components'),
         }),
+        DefineOptions()
     ],
     markdown:{
         headers:{

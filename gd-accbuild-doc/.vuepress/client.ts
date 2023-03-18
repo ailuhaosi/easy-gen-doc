@@ -11,7 +11,7 @@ import hljs from "highlight.js";
 //import "highlight.js/styles/color-brewer.css";
 import "highlight.js/styles/vs.css";
 import "highlight.js/lib/common";
-
+let resetPageStyle = () => {};
 export default defineClientConfig({
   enhance({ app, router, siteData }) {
     app.use(ElementPlus, { locale });
@@ -25,18 +25,24 @@ export default defineClientConfig({
         hljs.highlightBlock(block);
       });
     });
+    router.beforeResolve(async (to) => {
+      resetPageStyle();
+      return true;
+    });
   },
   setup() {
     onBeforeMount(() => {
-      setTimeout(function () {
-        const tocEl = document.querySelector("#app .toc-place-holder");
-        if (tocEl) {
-          document.querySelector("html")?.setAttribute("class", "with-toc");
-        } else {
-          document.querySelector("html")?.setAttribute("class", "no-toc");
-        }
-      }, 500);
-      //return true;
+      resetPageStyle = () => {
+        setTimeout(function () {
+          const tocEl = document.querySelector("#app .toc-place-holder");
+          if (tocEl) {
+            document.querySelector("html")?.setAttribute("class", "with-toc");
+          } else {
+            document.querySelector("html")?.setAttribute("class", "no-toc");
+          }
+        }, 500);
+      };
+      resetPageStyle();
     });
   },
   //rootComponents: [],

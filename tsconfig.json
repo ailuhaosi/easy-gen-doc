@@ -13,7 +13,8 @@
         "lib": [
             "esnext",
             "dom"
-        ]
+        ],
+        "types": ["unplugin-vue-define-options/macros-global" /* ... */]
     },
     "include": [
         "gd-accbuild-doc/.vuepress/**/*.ts",

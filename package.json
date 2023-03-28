@@ -26,9 +26,13 @@
   "dependencies": {
     "@element-plus/icons-vue": "^2.0.9",
     "@highlightjs/vue-plugin": "^2.1.0",
+    "@tomiaa/comment": "^0.0.3",
+    "@vssue/api-gitee-v5": "^1.4.7",
+    "@vssue/vuepress-plugin-vssue": "^1.4.8",
     "codemirror": "5.65.8",
     "codemirror-editor-vue3": "^2.1.7",
     "element-plus": "^2.2.16",
-    "highlight.js": "^11.6.0"
+    "highlight.js": "^11.6.0",
+    "vssue": "^1.4.8"
   }
 }

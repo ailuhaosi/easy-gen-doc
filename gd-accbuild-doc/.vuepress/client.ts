@@ -1,5 +1,5 @@
 import { defineClientConfig } from "@vuepress/client";
-import { onBeforeMount } from "vue";
+import { onBeforeMount, onMounted, ref } from "vue";
 import locale from "element-plus/lib/locale/lang/zh-cn";
 import ElementPlus from "element-plus";
 import "element-plus/theme-chalk/index.css";
@@ -12,6 +12,7 @@ import hljs from "highlight.js";
 import "highlight.js/styles/vs.css";
 import "highlight.js/lib/common";
 let resetPageStyle = () => {};
+let inst: any;
 export default defineClientConfig({
   enhance({ app, router, siteData }) {
     app.use(ElementPlus, { locale });
@@ -29,6 +30,9 @@ export default defineClientConfig({
       resetPageStyle();
       return true;
     });
+    router.afterEach((to, from) => {
+      window.CommonRef && window.CommonRef?.getList();
+    });
   },
   setup() {
     onBeforeMount(() => {
@@ -44,6 +48,7 @@ export default defineClientConfig({
       };
       resetPageStyle();
     });
+    
   },
   //rootComponents: [],
 });

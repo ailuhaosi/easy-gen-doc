@@ -4,7 +4,6 @@ import theme from "./theme.js";
 
 import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
 import { path } from "@vuepress/utils";
-import vssue from "@vssue/vuepress-plugin-vssue"
 export default defineUserConfig({
   base: "/gd-accbuild-doc/",
 
@@ -30,17 +29,7 @@ export default defineUserConfig({
     registerComponentsPlugin({
       componentsDir: path.resolve(__dirname, "./components"),
     }),
-    DefineOptions(),
-    vssue({
-      // 设置 `platform` 而不是 `api`
-      platform: "gitee",
-
-      // 其他的 Vssue 配置
-      owner: "OWNER_OF_REPO",
-      repo: "NAME_OF_REPO",
-      clientId: "YOUR_CLIENT_ID",
-      clientSecret: "YOUR_CLIENT_SECRET",
-    })
+    DefineOptions()
   ],
   markdown: {
     headers: {

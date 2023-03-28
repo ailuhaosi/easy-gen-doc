@@ -12,7 +12,7 @@ import hljs from "highlight.js";
 import "highlight.js/styles/vs.css";
 import "highlight.js/lib/common";
 let resetPageStyle = () => {};
-let inst: any;
+
 export default defineClientConfig({
   enhance({ app, router, siteData }) {
     app.use(ElementPlus, { locale });
@@ -29,9 +29,6 @@ export default defineClientConfig({
     router.beforeResolve(async (to) => {
       resetPageStyle();
       return true;
-    });
-    router.afterEach((to, from) => {
-      window.CommonRef && window.CommonRef?.getList();
     });
   },
   setup() {

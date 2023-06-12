@@ -1,11 +1,11 @@
 ---
 # 这是文章的标题
-title: 5. 原子组件
+title: 场景容器
 # 这是页面的图标
 icon: geometry
 # 链接页面禁止出现在侧边栏
 index: false
-order: 5
+order: 2
 # 设置作者
 author: gd
 # 设置写作时间
@@ -25,7 +25,7 @@ star: true
 # 你可以自定义页脚
 footer: 这是测试显示的页脚
 # 你可以自定义版权信息
-copyright: 无版权
+copyright: 优速搭出品
 ---
 
 ## 原子组件简介

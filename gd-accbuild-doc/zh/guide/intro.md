@@ -4,7 +4,7 @@ title: 优速搭平台简介
 # 这是页面的图标
 icon: page
 # 这是侧边栏的顺序
-order: 1
+order: 2
 toc: false
 # 设置作者
 author: gd
@@ -23,7 +23,7 @@ star: true
 # 你可以自定义页脚
 footer: 这是测试显示的页脚
 # 你可以自定义版权信息
-copyright: 无版权
+copyright: 优速搭出品
 ---
 
 ## 什么是优速搭？
@@ -122,11 +122,11 @@ copyright: 无版权
 ### 数据维护
 
 1. 物理表的基础维护<br/>
-    <img :src="$withBase('/images/1.1Designer-DataMgr.png')" alt="物理表的基础维护" />
+   <img :src="$withBase('/images/1.1Designer-DataMgr.png')" alt="物理表的基础维护" />
 2. 字典的基础维护<br/>
-    <img :src="$withBase('/images/1.2Designer-DictMgr.png')" alt="字典的基础维护" />
+   <img :src="$withBase('/images/1.2Designer-DictMgr.png')" alt="字典的基础维护" />
 3. 关联关系的维护(表关联、字典关联)<br/>
-    <img :src="$withBase('/images/1.3Designer-RelationMgr.png')" alt="关联关系的维护" />
+   <img :src="$withBase('/images/1.3Designer-RelationMgr.png')" alt="关联关系的维护" />
 
 ### 页面配置
 
@@ -143,12 +143,22 @@ copyright: 无版权
 
 ```mermaid
 graph TD
-X["页面"] --> A["布局组件(layout-ui)"]
-A -->|提供 布局能力| B("业务组件(biz-ui)")
-B -->|注入 meta数据和data数据| C["场景容器(scene-container)"]
-C -->|是维度组件的具体场景封装| D["维度组件(dimension-ui)"]
-D -->|增强 属性和事件| E["原子组件(atomic-ui)"]
-E -...->|逐层组装| X
+subgraph 优速搭框架
+    E -...->|逐层组装| X
+    X["页面"] --> A["布局组件层(layout-ui)"]
+    A -->|提供 布局能力| B("组件模板层")
+    B -->|增强 属性和事件| E["原子组件层(atomic-ui)"]
+end
+subgraph 组件模板层
+    m["业务组件(biz-ui)"] -->|注入 meta数据和data数据| C["场景容器(scene-container)"]
+    C -->|是维度组件的具体场景封装| D["维度组件(dimension-ui)"]
+end
+B -...-> m
+style A fill: #ccf, stroke: #f66, stroke-width: 2px, stroke-dasharray: 5,5;
+style m fill: #ccf, stroke: #f66, stroke-width: 2px, stroke-dasharray: 5,5;
+style C fill: #ccf, stroke: #f66, stroke-width: 2px, stroke-dasharray: 5,5;
+style D fill: #ccf, stroke: #f66, stroke-width: 2px, stroke-dasharray: 5,5;
+style E fill: #ccf, stroke: #f66, stroke-width: 2px, stroke-dasharray: 5,5;
 ```
 
 ### 五种组件对比
@@ -158,17 +168,26 @@ E -...->|逐层组装| X
 <tr style=""><td colspan="10" style="min-width:100%;display:flex;flex-direction: row;justify-content:space-between;"><div>顶层</div><div style="widtn:100px;">----></div><div>底层</div></td></tr>
     <tr>
         <th style="min-width:80px;">组件分类</th>
-        <td>布局组件(layout-ui)</td>
-        <td>业务组件(biz-ui)</td>  
-        <td>场景容器(scene-container)</td> 
-        <td>维度组件(dimension-ui)</td> 
-        <td>原子组件(atomic-ui)</td> 
+        <td>布局组件层(layout-ui)</td>
+        <td colspan="3">
+        <div style="display:flex;flex-direction:column;justify-content:center;align-items:center;width:100%;">
+        <div style="width:100%;text-align:center;border-bottom:0.5px #eee solid;">模板组件层</div>
+        <div style="display:flex;flex-direction:row;width:100%;">
+        <div style="flex:1;width:100%;text-align:center;">业务组件(biz-ui)</div>
+        <div style="flex:1;width:100%;text-align:center;">场景容器(scene-container)</div>
+        <div style="flex:1;width:100%;text-align:center;">维度组件(dimension-ui)</div>
+        </div>
+        </div>
+        </td>  
+        <!--   -->
+        <!-- <td>维度组件(dimension-ui)</td>  -->
+        <td>原子组件层(atomic-ui)</td> 
     </tr>
     <tr>
         <th style="min-width:80px;">简介</th>
         <td style="min-width:220px;">布局组件，是一个页面的最外层组件,用于<strong>控制内层组件的布局样式</strong>，内部可以承载多个业务组件或原子组件。目前支持栅格布局、固定布局+flex布局</td>
         <td style="min-width:220px;">业务组件(biz-ui)，是向<strong>下一层组件</strong>注入 "增删改查能力" + "UI元数据(meta数据)"的组件。</td>
-        <td style="min-width:220px;">场景容器(scene-container)，是对<strong>维度组件</strong>的具体实现，分为一维容器:表单、二维容器:表格、卡片列表等。</td>
+        <td style="min-width:220px;">场景容器(scene-container)，是对<strong>维度组件</strong>的具体实现，按**主数据**类型分为一维容器:表单、二维容器:表格、卡片列表等。</td>
         <td style="min-width:220px;">维度组件，维度组件不是凭空创造的概念，是为了解决低代码平台组件间联动交互等问题。维度组件<strong>包裹</strong>了原子组件，<strong>增强了 内部原子组件的属性和事件</strong>。维度组件分为 一维型:对象型容器(表单)、二维型:数组型容器(表格、循环的卡片等)。表单中的每一项原子组件 与 其它原子组件的联动;表格中每行每列与其它行列的联动。都可以通过在事件回调中修改对应的meta数据来实现。</td>
         <td style="min-width:220px;">原子组件，最基础的组件。用户可以任意写逻辑。如果原子组件编写了<strong>配置文件</strong>，则说明允许暴露给维度组件包裹，则可以通过内部的事件参数来读写其它的meta数据。</td>
     </tr>
@@ -190,3 +209,7 @@ E -...->|逐层组装| X
     </tr>
 </table>
 </div>
+
+::: tip
+模板层的概念比较多比较抽象，可以具体看<router-link :to="'/zh/development/fontend/组件开发篇/模板组件层/intro.md'">(点我看模板组件的概念)</router-link>
+:::

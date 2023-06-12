@@ -1,9 +1,10 @@
 ---
 # 这是文章的标题
-title: 前置知识
+title: 布局组件层
 # 这是页面的图标
-icon: page
-# 这是侧边栏的顺序
+icon: layout
+# 链接页面禁止出现在侧边栏
+index: false
 order: 1
 # 设置作者
 author: gd
@@ -24,8 +25,5 @@ star: true
 # 你可以自定义页脚
 footer: 这是测试显示的页脚
 # 你可以自定义版权信息
-copyright: 优速搭出品
+copyright: 优速搭 版权所有
 ---
-
-## 前端二次开发前置知识
-

@@ -22,7 +22,7 @@ star: true
 # 你可以自定义页脚
 footer: 这是测试显示的页脚
 # 你可以自定义版权信息
-copyright: 无版权
+copyright: 优速搭出品
 ---
 
 ## 软件开发形态的思考
@@ -215,7 +215,7 @@ style gd_metaSync fill: #ccf, stroke: #f66, stroke-width: 2px, stroke-dasharray:
 
 1. 凡是 star [优速搭低代码引擎](https://gitee.com/gd771747384/gd-accbuild-template)可以限时免费使用设计器(因为优速搭低代码平台的使用没有其它任何费用，仅对设计器使用会收取部分费用，而且至少 2023 年底之前完全免费,另外后续开发者基本也是免费使用，仅对企业用户收取高级版服务费)
 2. 凡是点赞+评论+转发 了博主的优速搭相关技术文章的可以限时免费使用设计器(同上)
-3. 凡是贡献了代码的 属于 有效的新功能 或 修复 bug 的，可以免费使用设计器 以您个人名义或您所在公司使用。<strong>贡献高的前五位可以获得优速搭低代码平台未来的收益，共享睡后收入。</strong>如愿意直接认领项目计划的还可以免费领取 DCloud 云服务器一台用于开发测试(这可是作者自掏腰包的哦 🤝)。愿意贡献代码的可加群交流<span @click="picJump('/images/永久-开源参与群 1.png')" style="cursor:pointer;color:red;">点我扫码</span>
+3. 凡是贡献了代码的 属于 有效的新功能 或 修复 bug 的，可以免费使用设计器 以您个人名义或您所在公司使用。<strong>贡献高的前五位可以获得优速搭低代码平台未来的收益，共享睡后收入。</strong>愿意贡献代码的可加群交流<span @click="picJump('/images/永久-开源参与群 1.png')" style="cursor:pointer;color:red;">点我扫码</span>
    :::
 
 ## 关于作者

@@ -1,10 +1,9 @@
 ---
 # 这是文章的标题
-title: 1. 布局组件
+title: 动手写一个布局组件
 # 这是页面的图标
-icon: layout
-# 链接页面禁止出现在侧边栏
-index: false
+icon: page
+# 这是侧边栏的顺序
 order: 1
 # 设置作者
 author: gd
@@ -27,3 +26,6 @@ footer: 这是测试显示的页脚
 # 你可以自定义版权信息
 copyright: 优速搭 版权所有
 ---
+
+## 前置知识
+<router-link :to="'/zh/guide/intro.html#概念设计'">布局组件(layout-ui)(点我看概念设计理念)</router-link>，是一个页面的最外层组件,用于控制内层组件的布局样式，内部可以承载多个biz组件或原子组件。目前支持栅格布局、固定布局+flex布局。

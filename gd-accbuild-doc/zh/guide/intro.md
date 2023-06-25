@@ -1,8 +1,8 @@
 ---
 # 这是文章的标题
-title: 优速搭平台简介
+title: 优速搭平台软件架构
 # 这是页面的图标
-icon: page
+icon: home
 # 这是侧边栏的顺序
 order: 2
 toc: false
@@ -71,7 +71,7 @@ copyright: 优速搭出品
         <td class="gd-acc--function">gd-accbuild-idea-extension</td>
         <td class="gd-acc--desc">表结构、UI元数据同步等功能</td>
         <td  class="gd-acc--design-for">低代码 LowCode</td>
-        <td class="gd-acc--plan">暂未完善,暂不可用</td>
+        <td class="gd-acc--plan">持续完善中可以使用</td>
     </tr>
     <tr>
         <th style="min-width:120px;" rowspan="4">优速搭核心框架</th>

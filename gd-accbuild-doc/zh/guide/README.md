@@ -8,7 +8,7 @@ category:
 
 ## 目录
 
-- [前言](preface.md)
+- [一款合格低代码具备的生态架构](preface.md)
 
 - [优速搭平台简介](intro.md)
 - 

@@ -68,20 +68,21 @@ copyright: 优速搭出品
     </tr>
     <tr>
         <th style="min-width:130px;">IDEA插件</th>
-        <td class="gd-acc--function">gd-accbuild-idea-extension</td>
+        <td class="gd-acc--function"><a href="https://ext.dcloud.net.cn/plugin?id=11368" target="_blank">gd-accbuild-idea-extension</a></td>
         <td class="gd-acc--desc">表结构、UI元数据同步等功能</td>
         <td  class="gd-acc--design-for">低代码 LowCode</td>
         <td class="gd-acc--plan">持续完善中可以使用</td>
     </tr>
     <tr>
         <th style="min-width:120px;" rowspan="4">优速搭核心框架</th>
-        <td class="gd-acc--function"><div>前端项目框架</div><div>gd-accbuild-admin</div><div>gd-accbuild-mobile</div></td>
+        <td class="gd-acc--function"><div>前端项目框架</div><div><a href="https://gitee.com/gd771747384/gd-accbuild-admin" target="_blank"></a>gd-accbuild-admin</div><div>gd-accbuild-mobile</div>
+        <div><a href="https://gitee.com/gd771747384/gd-accbuild-demo-base" target="_blank">gd-accbuild-demo-base</a><div>(纯净版;最简单方式体验)</div></div></td>
         <td class="gd-acc--desc">允许用户按一定规范修改前端页面代码，并且遵循一定的合并策略，不会在与零代码混合开发时发生冲突。</td>
         <td  class="gd-acc--design-for">低代码 LowCode</td>
         <td class="gd-acc--plan">持续完善中可以使用</td>
     </tr>
     <tr>
-        <td class="gd-acc--function"><div>前端组件库</div><div>gd-accbuild-template</div></td>
+        <td class="gd-acc--function"><div>前端核心框架</div><div><a href="http://designer.gd-accbuild.com" target="_blank">gd-accbuild-core</a></div></td>
         <td class="gd-acc--desc">允许用户以 NPM 包的方式使用前端组件。</td>
         <td  class="gd-acc--design-for">高代码 ProCode</td>
         <td class="gd-acc--plan">持续完善中可以使用</td>
@@ -122,15 +123,15 @@ copyright: 优速搭出品
 ### 数据维护
 
 1. 物理表的基础维护<br/>
-   <img :src="$withBase('/images/1.1Designer-DataMgr.png')" alt="物理表的基础维护" />
+   <img :src="$withBase('/images/1.1Designer-DataMgr.png')" alt="物理表的基础维护" style="width:500px;" />
 2. 字典的基础维护<br/>
-   <img :src="$withBase('/images/1.2Designer-DictMgr.png')" alt="字典的基础维护" />
+   <img :src="$withBase('/images/1.2Designer-DictMgr.png')" alt="字典的基础维护" style="width:500px;" />
 3. 关联关系的维护(表关联、字典关联)<br/>
-   <img :src="$withBase('/images/1.3Designer-RelationMgr.png')" alt="关联关系的维护" />
+   <img :src="$withBase('/images/1.3Designer-RelationMgr.png')" alt="关联关系的维护" style="width:500px;" />
 
 ### 页面配置
 
-<img :src="$withBase('/images/2.2Designer-SettingPage.png')" alt="页面可视化配置" />
+<img :src="$withBase('/images/2.2Designer-SettingPage.png')" alt="页面可视化配置" style="width:500px;" />
 
 ## 优速搭低代码实现原理
 

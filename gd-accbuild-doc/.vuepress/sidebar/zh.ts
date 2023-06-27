@@ -32,6 +32,14 @@ export const zh = sidebar({
           prefix: "backend/",
           children: "structure",
         }], 
-    }
+    },
+    {
+      text: "使用教程",
+      icon: "launch",
+      prefix: "example/",
+      link: "example/",
+	  collapsable: true,
+      children: "structure",
+    },
   ],
 });

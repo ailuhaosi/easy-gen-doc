@@ -22,7 +22,10 @@ tag:
 
 1. 登录[Dcloud 开发者控制台](https://dev.dcloud.net.cn/#/pages/common/login?uniIdRedirectUrl=%252Fpages%252Findex%252Findex)，并开通 uniCloud 服务并<span style="color:red;">实名认证</span>。
 2. 您必须拥有[HBuilderX 编辑器](https://www.dcloud.io/hbuilderx.html)，下载项目[工程代码](https://ext.dcloud.net.cn/plugin?id=13184) 安装优速搭编辑器插件(安装玩插件记得重启编辑器)，<del>并将项目工程代码编译打包上传到 uniCloud 的静态资源服务器中。同时上传云函数、上传 DBSchema 使用`db_init.json`初始化数据库。</del>
-   
+
+## 仅仅想体验一下   
+账号： `2772725741@qq.com`<br/>
+密码: `Aa123456`<br/>
 
 ::: tip
   具体详细操作步骤请看视频教程，如创建项目遇到问题，请在 gitee 中提问

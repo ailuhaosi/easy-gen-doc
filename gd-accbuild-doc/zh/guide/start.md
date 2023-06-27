@@ -23,7 +23,8 @@ tag:
 1. 登录[Dcloud 开发者控制台](https://dev.dcloud.net.cn/#/pages/common/login?uniIdRedirectUrl=%252Fpages%252Findex%252Findex)，并开通 uniCloud 服务并<span style="color:red;">实名认证</span>。
 2. 您必须拥有[HBuilderX 编辑器](https://www.dcloud.io/hbuilderx.html)，下载项目[工程代码](https://ext.dcloud.net.cn/plugin?id=13184) 安装优速搭编辑器插件(安装玩插件记得重启编辑器)，<del>并将项目工程代码编译打包上传到 uniCloud 的静态资源服务器中。同时上传云函数、上传 DBSchema 使用`db_init.json`初始化数据库。</del>
 
-## 仅仅想体验一下   
+## 仅仅想体验一下
+[访问官网](http://designer.gd-accbuild.com)<br/>
 账号： `2772725741@qq.com`<br/>
 密码: `Aa123456`<br/>
 
@@ -31,7 +32,8 @@ tag:
   具体详细操作步骤请看视频教程，如创建项目遇到问题，请在 gitee 中提问
 :::
 
-- **注意点 1**：插件导入到 HBuilderX 后，必须手动进入插件安装目录使用(推荐 node v16.20.0)`npm install`重新生成 node_modules。(这大概是 HBuilderX 的 bug 后续官方会修复的)
+- **注意点 1**：插件导入到 HBuilderX 后，必须手动进入插件安装目录使用(推荐 node v16.20.0)`npm install`重新生成 node_modules。(这大概是 HBuilderX 的 bug 后续官方会修复的)<br/>
+- **注意点2**： 由于本系统使用了serverless，再加上没用任何缓存纯元数据动态拼接jql，第一次访问会比较慢如出现页面加载不出来情况，请您刷新页面重新尝试就可以了。(后面我们会进行针对性的后端优化)<br/>
 
 ## 动手创建一个后台管理应用
 
